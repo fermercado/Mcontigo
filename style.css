@@ -19,7 +19,7 @@ header {
 
 nav {
   margin: auto;
-  max-width: 1340px;
+  max-width: 1160px;
   width: 90%;
 }
 
@@ -64,15 +64,13 @@ header nav ul {
   padding-top: 58px;
   max-width: 1920px;
   width: 100%;
-  max-height: 650px;
   margin: auto;
 }
 .home-container--text {
   position: absolute;
   display: flex;
   flex-direction: column;
-
-  padding-left: 10%;
+  padding-left: 18%;
 }
 h1 {
   font-family: "Source Sans Pro", sans-serif;
@@ -106,7 +104,6 @@ h5 {
 
 .slide {
   display: none;
-
   align-items: center;
 }
 
@@ -122,8 +119,6 @@ h5 {
 .slide.activeSlide {
   display: flex;
 }
-
-
 
 .menu-options-card {
   position: absolute;
@@ -165,34 +160,285 @@ h5 {
 }
 
 .publi-ads--slide {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #e4e4e4;
-    justify-content: center;
-    padding: 10px 60px 20px 60px;
+  margin: auto;
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e4e4e4;
+  justify-content: center;
+  padding: 10px 60px 20px 60px;
 }
 .publi-ads--slide img {
-    width: 100%;
-   
+  width: 100%;
+}
 
+.latest-news--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1160px;
+  width: 90%;
 }
 
 main {
-    margin: auto;
-    max-width: 1340px;
-    width: 90%;
+  margin: auto;
+  max-width: 1920px;
+  width: 100%;
+}
+
+.latest-news {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  color: #414141;
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+
+.separator {
+  margin: auto;
+  width: 70px;
+  height: 4px;
+  background-color: #95e7d4;
+  margin-bottom: 32px;
+}
+
+.latest-news--news {
+  max-width: 561px;
+  width: 100%;
+}
+.latest-news--news img {
+  max-width: 561px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.latest-news--news p {
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  color: #414141;
+  padding-top: 20px;
+  flex-wrap: wrap;
+  line-height: 32px;
+  padding-bottom: 48px;
+}
+
+.main-news {
+  margin: auto;
+  max-width: 1160px;
+  width: 90%;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.main-news-container {
+  width: 100%;
+  display: flex;
+  background-color: #f8f7fb;
+  padding: 60px 0;
+}
+
+.main-news--primary {
+  max-width: 561px;
+}
+
+.main-news--primary img {
+  width: 100%;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #000000;
+  margin: 32px 0 16px 0;
+}
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 32px;
+  margin-right: 12px;
+  background: #95e7d4;
+}
+.main-news--primary p {
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  color: #414141;
+  line-height: 32px;
+}
+
+.main-news--secundary {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.main-news--secundary a {
+  min-width: 400px;
+  display: flex;
+  align-items: center;
+}
+.main-news--secundary-img {
+  max-width: 235px;
+  width: 100%;
+  margin-right: 12px;
+  
+}
+
+.main-news--secundary-img img {
+  width: 100%;
+  border-radius: 5px;
+}
+.main-news--separator {
+  height: 90%;
+ min-width: 3px;
+  background-color: #95e7d4;
+  margin-right:10px;
+}
+.main-news--text {
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+h4 {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #000000;
+  padding-bottom: 4px;
+}
+.main-news--text p {
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  color: #414141;
+  line-height: 32px;
+}
+
+.publicity-recommended img{
+  max-width: 333px;
+  width: 100%;
+
+}
+
+.publicity-recommended--mobile{
+  display: none;
+}
+
+.comments-container{
+  width: 100%;
+  background-color: #f8f7fb;
+}
+
+.comments {
+  margin: auto;
+  max-width: 1160px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.comments-phrase {
+  width: 550px;
+  text-align:center;
+  font-family: "Merriweather", serif;
+  line-height: 32px;
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 16px;
+}
+.comments-name {
+  font-family: "Merriweather", serif;
+  font-weight: bold;
+  line-height: 32px;
+  font-size: 1rem;
+  margin-top: 16px;
+}
+.comments ul  {
+ display: flex;
+ gap: 20px;
+}
+.comments ul li {
+  margin-top: 16px;
+  width: 8px;
+  height: 8px;
+  background-color: #414141;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .main-news--secundary {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .main-news--text {
+    min-width: 10px;
   }
 
+  h4 {
+    font-size: 1rem;
+  }
+  .main-news--text p {
+    font-size: 0.75rem;
+    line-height: 24px;
+  }
+}
+@media (max-width: 1000px) {
+  .main-news {
+    gap: 20px;
+  }
 
+  .main-news--secundary a {
+    min-width: 220px;
+  }
+  .main-news--secundary-img {
+    width: 70%;
+    margin-right: 16px;
+  }
+  .main-news--secundary {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
 
+  h2 {
+    font-size: 1.2rem;
+    margin: 16px 0 8px 0;
+  }
+
+  .main-news--primary p {
+    font-size: 0.75rem;
+  }
+}
 @media (max-width: 768px) {
-    .menu-options-card {
-       
-        top: 38px;
-       
-      }
+  .menu-options-card {
+    top: 38px;
+  }
   .home-container {
     padding-top: 38px;
   }
@@ -221,6 +467,10 @@ main {
     margin-bottom: 8px;
   }
 
+  h3{
+    font-size: 1rem;
+  }
+
   h5 {
     font-size: 0.75rem;
     margin-bottom: 0;
@@ -230,6 +480,33 @@ main {
     font-size: 0.5rem;
     line-height: 16px;
   }
+  .inactive {
+    display: none;
+  }
+  .main-news {
+ 
+    flex-direction: column;
+ 
+  
+  }
+
+  h2{
+    font-size: 1.5rem;
+  }
+  .main-news--secundary a {
+    align-items: flex-start;
+  }
+  .publicity-recommended--mobile{
+    padding: 10px 0;
+    background-color:#e4e4e4;
+    display: flex;
+    justify-content: center;
+  }
+
+
+  
+
+
 }
 
 @media (max-width: 425px) {
@@ -240,4 +517,12 @@ main {
   .home-container--text {
     padding-left: 3%;
   }
+  .main-news--secundary-img {
+    width: 100%;
+    margin-right: 0;
+  }
+  .main-news--secundary a {
+    align-items: center;
+  }
+ 
 }
