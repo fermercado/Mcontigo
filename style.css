@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 * {
@@ -295,7 +296,6 @@ h2::before {
   max-width: 235px;
   width: 100%;
   margin-right: 12px;
-  
 }
 
 .main-news--secundary-img img {
@@ -304,9 +304,9 @@ h2::before {
 }
 .main-news--separator {
   height: 90%;
- min-width: 3px;
+  min-width: 3px;
   background-color: #95e7d4;
-  margin-right:10px;
+  margin-right: 10px;
 }
 .main-news--text {
   min-width: 280px;
@@ -314,8 +314,6 @@ h2::before {
   flex-direction: column;
   justify-content: space-between;
 }
-
-
 
 h4 {
   font-family: "Merriweather", serif;
@@ -331,17 +329,17 @@ h4 {
   line-height: 32px;
 }
 
-.publicity-recommended img{
+.publicity-recommended img {
   max-width: 333px;
   width: 100%;
-
 }
 
-.publicity-recommended--mobile{
+.publicity-recommended--mobile {
   display: none;
 }
 
-.comments-container{
+.comments-container {
+  margin-top: 32px;
   width: 100%;
   background-color: #f8f7fb;
 }
@@ -354,12 +352,11 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .comments-phrase {
-  width: 550px;
-  text-align:center;
+  max-width: 550px;
+  text-align: center;
   font-family: "Merriweather", serif;
   line-height: 32px;
   font-size: 1rem;
@@ -373,23 +370,190 @@ h4 {
   font-size: 1rem;
   margin-top: 16px;
 }
-.comments ul  {
- display: flex;
- gap: 20px;
+.comments ul {
+  display: flex;
+  gap: 20px;
 }
 .comments ul li {
-  margin-top: 16px;
+  margin: 16px 0 24px 0;
   width: 8px;
   height: 8px;
   background-color: #414141;
   border-radius: 50%;
 }
 
+.faq-container {
+  margin: auto;
+  max-width: 1160px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 16px;
+}
+.faq {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.faq-list {
+  width: 100%;
 
+  display: flex;
+  flex-direction: column;
+}
 
+h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 32px;
+  margin-bottom: 24px;
+  color: #000000;
+}
 
+h6::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 14px;
+  background-color: #95e7d4;
+  margin-right: 8px;
+}
 
+h6 i {
+  margin-left: 8px;
+}
 
+.faq-list dd {
+  width: 80%;
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+  color: #414141;
+  line-height: 32px;
+  margin: 0 0 12px 32px;
+}
+
+.faq-img {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.faq-img img {
+  max-width: 387px;
+  width: 100%;
+}
+
+.faq-inactive {
+  display: none;
+}
+
+.contacto-container {
+  width: 100%;
+  background-color: #f8f7fb;
+}
+
+.contact {
+  margin: auto;
+  max-width: 1160px;
+  width: 90%;
+  display: flex;
+  gap: 50px;
+}
+
+.contact-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-img img {
+  max-width: 353px;
+  width: 100%;
+}
+
+.contact-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-text {
+  width: 360px;
+  height: 53px;
+  margin-bottom: 16px;
+  border: none;
+  border: 1px solid #b5c4e2;
+  border-radius: 5px;
+  outline: none;
+  color: #b378ff;
+  font-size: 1rem;
+  padding-left: 16px;
+}
+.contact-form textarea {
+  width: 360px;
+  height: 148px;
+  resize: none;
+  margin-top: 8px;
+  border: none;
+  border: 1px solid #b5c4e2;
+  border-radius: 5px;
+  outline: none;
+  color: #b378ff;
+  font-size: 1rem;
+  padding: 16px;
+}
+
+.input-checkbox {
+  width: 360px;
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+.input-checkbox input {
+  all: unset;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  margin-right: 16px;
+  border: none;
+  outline: none;
+  border: 1px solid #b5c4e2;
+}
+.input-checkbox input:checked {
+  background-color: #95e7d4;
+}
+.input-checkbox p {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #b5c4e2;
+}
+.contact-form input::placeholder,
+textarea::placeholder {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #b5c4e2;
+}
+
+.contact-button {
+  width: 360px;
+  height: 56px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color: #95e7d4;
+  color: #ffffff;
+  margin-bottom: 48px;
+}
 @media (max-width: 1200px) {
   .main-news--secundary {
     display: flex;
@@ -406,6 +570,13 @@ h4 {
   .main-news--text p {
     font-size: 0.75rem;
     line-height: 24px;
+  }
+  h6 {
+    font-size: 1.2rem;
+  }
+
+  .faq-list dd {
+    font-size: 0.75rem;
   }
 }
 @media (max-width: 1000px) {
@@ -433,6 +604,13 @@ h4 {
 
   .main-news--primary p {
     font-size: 0.75rem;
+  }
+  h6 {
+    font-size: 1rem;
+  }
+  h6::before {
+    width: 18px;
+    height: 10px;
   }
 }
 @media (max-width: 768px) {
@@ -467,7 +645,7 @@ h4 {
     margin-bottom: 8px;
   }
 
-  h3{
+  h3 {
     font-size: 1rem;
   }
 
@@ -484,34 +662,68 @@ h4 {
     display: none;
   }
   .main-news {
- 
     flex-direction: column;
- 
-  
   }
 
-  h2{
+  h2 {
     font-size: 1.5rem;
+  }
+  .latest-news--news p {
+    padding-bottom: 24px;
+  }
+  .main-news-container {
+    padding: 20px 0;
   }
   .main-news--secundary a {
     align-items: flex-start;
   }
-  .publicity-recommended--mobile{
+  .publicity-recommended--mobile {
+    width: 100%;
+    margin-top: 24px;
     padding: 10px 0;
-    background-color:#e4e4e4;
+    background-color: #e4e4e4;
     display: flex;
     justify-content: center;
   }
 
+  .comments-phrase {
+    font-size: 0.75rem;
+  }
+  .faq-list {
+    align-items: center;
+  }
+  h6 {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+  }
 
-  
+  .faq-list dd {
+    max-width: 300px;
+    width: 100%;
 
+    font-size: 0.5rem;
 
+    line-height: 16px;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
+  }
+  h6::before {
+    width: 18px;
+    height: 10px;
+  }
+  .faq {
+    width: 90%;
+  }
 }
 
 @media (max-width: 425px) {
   nav {
     width: 95%;
+  }
+  .faq {
+    width: 100%;
   }
 
   .home-container--text {
@@ -524,5 +736,4 @@ h4 {
   .main-news--secundary a {
     align-items: center;
   }
- 
 }
