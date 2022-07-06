@@ -362,6 +362,7 @@ h4 {
   font-size: 1rem;
   font-style: italic;
   margin-top: 16px;
+  color: #414141;
 }
 .comments-name {
   font-family: "Merriweather", serif;
@@ -554,6 +555,66 @@ textarea::placeholder {
   color: #ffffff;
   margin-bottom: 48px;
 }
+
+footer {
+  background-color: #265e6c;
+  padding: 55px 0 24px 0;
+}
+
+.footer-container {
+  width: 90%;
+  margin: auto;
+
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo p {
+  max-width: 454px;
+  width: 100%;
+  margin-left: 24px;
+  font-family: "Merriweather", serif;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -2%;
+  color: #ffffff;
+}
+
+.footer-separator {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.footer-separator-mobile{
+  display: none;
+  margin-top: 16px;
+  justify-content: center;
+}
+.footer-separator img {
+  max-width: 980px ;
+  width: 100%;
+}
+
+.footer-options ul {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  gap: 48px;
+}
+.footer-options a {
+  display: flex;
+  color: #e4e4e4;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
 @media (max-width: 1200px) {
   .main-news--secundary {
     display: flex;
@@ -611,6 +672,12 @@ textarea::placeholder {
   h6::before {
     width: 18px;
     height: 10px;
+  }
+  .footer-options ul {
+    gap: 32px;
+  }
+  .footer-options a {
+    font-size: .75rem;
   }
 }
 @media (max-width: 768px) {
@@ -716,6 +783,34 @@ textarea::placeholder {
   .faq {
     width: 90%;
   }
+  .footer-options ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+  }
+  .footer-separator-mobile{
+    display: flex;
+  
+  }
+  .footer-logo {
+   flex-direction: column;
+  }
+  .footer-logo img {
+    margin-bottom: 24px;
+  }
+  .footer-options ul {
+    gap: 16px;
+  }
+  .footer-logo p {
+  
+    margin-left: 0;
+  
+   
+  
+  }
+ 
 }
 
 @media (max-width: 425px) {
