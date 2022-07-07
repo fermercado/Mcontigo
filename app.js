@@ -33,6 +33,27 @@ function closeMenu () {
    
 }
 
+function initScrollSmooth() {
+    const links = document.querySelectorAll('.menu-options-card a[href^="#"]')
+  
+    function scrollToSection(event) {
+      const href = event.currentTarget.getAttribute('href')
+      const sections = document.querySelector(href)
+      const top = sections.offsetTop
+  
+     window.scrollTo({
+        top: top - 50,
+        behavior: "smooth"
+     })
+  
+    }
+    links.forEach(link => {
+      link.addEventListener('click', scrollToSection)
+    })
+  }
+  
+  initScrollSmooth()
+
 
 
 
