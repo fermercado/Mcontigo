@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <meta name="viewport" content="width=device=width , initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/15c26e1696.js"
@@ -16,30 +16,36 @@
       <nav>
         <ul>
           <li>
-            <button class="menu-hamburguer">
-              <span class="menu-hamburguer--button"></span>
-            </button>
+            <div class="menu__hamburguer">
+              <span class="menu__button menu__open--button"></span>
+            </div>
           </li>
-          <li class="menu-logo--img">
+          <li class="menu__img">
             <img src="img/Logotipoheader.png" alt="logo" />
           </li>
-          <li class="menu-search--img">
+          <li class="search__img">
             <img src="img/bx-search-alt.svg" alt="search-svg" />
           </li>
         </ul>
       </nav>
     </header>
-    <aside class="menu-options-card">
+    <aside class="menu__options">
+      <div>
+        <form class="search__container">
+          <input type="text" placeholder="Buscar artículos" />
+          <button class="search__button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
       <p>Lorem Ipsum</p>
       <span></span>
       <ul>
         <li>
-          <a href="#home"
-            >Home <i class="fa-solid fa-arrow-right"></i
-          ></a>
+          <a href="#home">Home <i class="fa-solid fa-arrow-right"></i></a>
         </li>
         <li>
-          <a href="#latest-news"
+          <a href="#latest"
             >Últimos articulos <i class="fa-solid fa-arrow-right"></i
           ></a>
         </li>
@@ -49,84 +55,114 @@
           ></a>
         </li>
         <li>
-          <a href="#comments"> Testimonios <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#comments">
+            Testimonios <i class="fa-solid fa-arrow-right"></i
+          ></a>
         </li>
         <li>
           <a href="#faq">FAQ <i class="fa-solid fa-arrow-right"></i></a>
         </li>
         <li>
-          <a href="#contact">Contacto <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#contact"
+            >Contacto <i class="fa-solid fa-arrow-right"></i
+          ></a>
         </li>
       </ul>
     </aside>
-    <section id="home" class="home-container">
-      <ul class="home-container--slide">
+    <section class="modal__newsletter">
+      <div class="modal__body">
+        <div class="modal__newsletter--close">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <div class="modal__content">
+          <p>¡Recibe noticias de primera mano!</p>
+          <form>
+            <input
+              class="input__text"
+              type="text"
+              placeholder="E-mail"
+              required
+            />
+            <button class="form__button" type="submit">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="home" class="home__container">
+      <div class="home__text">
+        <h1>
+          Su viaje de
+          <strong
+            >salud <br />
+            emocional</strong
+          >
+          <br />
+          empieza aqui
+        </h1>
+        <h5>
+          Conoce nuestro <br />
+          profesionales con licencia
+        </h5>
+        <p>
+          Todos se someten a un proceso seguro de <br />
+          verificación y acreditación, además de <br />
+          adherirse a estrictos códigos de ética y <br />
+          confidencialidad.
+        </p>
+      </div>
+      <ul class="home__slide">
         <li class="slide activeSlide">
-          <img src="img/photo 01.png" alt="" />
-          <div class="home-container--text">
-            <h1>
-              Su viaje de
-              <strong
-                >salud <br />
-                emocional</strong
-              >
-              <br />
-              empieza aqui
-            </h1>
-            <h5>
-              Conoce nuestro <br />
-              profesionales con licencia
-            </h5>
-            <p>
-              Todos se someten a un proceso seguro de <br />
-              verificación y acreditación, además de <br />
-              adherirse a estrictos códigos de ética y <br />
-              confidencialidad.
-            </p>
-          </div>
+          <img src="img/photo 01.png" alt="img1" />
         </li>
         <li class="slide">
-          <img src="img/photo 02.png" alt="" />
+          <img src="img/photo 02.png" alt="img2" />
         </li>
         <li class="slide">
-          <img src="img/photo 03.png" alt="" />
+          <img src="img/photo 03.png" alt="img3" />
         </li>
         <li class="slide">
-          <img src="img/photo 04.png" alt="" />
+          <img src="img/photo 04.png" alt="img4" />
         </li>
         <li class="slide">
-          <img src="img/photo 05.png" alt="" />
+          <img src="img/photo 05.png" alt="img5" />
         </li>
       </ul>
-      <div class="publi-ads--slide">
+      <div class="publi__slide">
         <div>
-          <img src="img/Advertising.png" alt="" />
+          <img src="img/Advertising.png" alt=" publicidade" />
         </div>
         <div>
-          <img src="img/image 5.png" alt="" />
+          <img src="img/image 5.png" alt="publicidade " />
         </div>
       </div>
     </section>
 
     <main>
-      <section id="latest-news"class="latest-news--container">
+      <section id="latest" class="latest__container">
         <div>
           <h3>Últimos articulos</h3>
           <div class="separator"></div>
         </div>
-        <div class="latest-news">
-          <a href="" class="latest-news--news">
+        <div class="latest__news">
+          <a
+            href="https://mejorconsalud.as.com/aspectos-enfermedad-alzheimer-malinterpretan/"
+            class="latest__content"
+          >
             <div>
-              <img src="img/photo 15.png" alt="" />
+              <img src="img/photo 15.png" alt="criança sorrindo com amigos" />
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               lacinia ligula turpis. Lorem ipsum dolor sit amet.
             </p>
           </a>
-          <a href="" class="latest-news--news inactive">
+          <a
+            href="https://mejorconsalud.as.com/consejos-maquillaje-alrededor-ojos/"
+            class="latest__content inactive"
+          >
             <div>
-              <img src="img/photo 16.png" alt="" />
+              <img src="img/photo 16.png" alt="familia brincando e sorrindo" />
             </div>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
@@ -135,12 +171,17 @@
           </a>
         </div>
       </section>
-      <section class="main-news-container">
-        <div class="main-news">
-          <div class="main-news--primary">
-            <a href="">
+      <section class="main__container">
+        <div class="main__news">
+          <div class="main__primary">
+            <a
+              href="https://mejorconsalud.as.com/cuales-son-reacciones-adversas-cosmeticos-mas-frecuentes/"
+            >
               <div>
-                <img src="img/photo 08.png" alt="" />
+                <img
+                  src="img/photo 08.png"
+                  alt="mãe e filha deitada sorrindo"
+                />
               </div>
               <h2>Lorem ipsum dolor ?</h2>
               <p>
@@ -149,13 +190,18 @@
               </p>
             </a>
           </div>
-          <div class="main-news--secundary">
-            <a href="">
-              <div class="main-news--secundary-img">
-                <img src="img/photo 09.png" alt="" />
+          <div class="main__secundary">
+            <a
+              href="https://mejorconsalud.as.com/slugging-tendencia-cuidado-piel/"
+            >
+              <div class="main__img">
+                <img
+                  src="img/photo 09.png"
+                  alt="criança sentada ao lado de um bebe"
+                />
               </div>
 
-              <div class="main-news--text">
+              <div class="main__text">
                 <h4>Lorem ipsum dolor sit.</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
@@ -163,11 +209,13 @@
                 </p>
               </div>
             </a>
-            <a href="">
-              <div class="main-news--secundary-img">
-                <img src="img/photo 10.png" alt="" />
+            <a
+              href="https://mejorconsalud.as.com/hiperhidrosis-capilar-que-puede-controlarlo/"
+            >
+              <div class="main__img">
+                <img src="img/photo 10.png" alt="familia sorrindo" />
               </div>
-              <div class="main-news--text">
+              <div class="main__text">
                 <h4>Lorem ipsum dolor sit.</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
@@ -175,11 +223,13 @@
                 </p>
               </div>
             </a>
-            <a href="">
-              <div class="main-news--secundary-img">
+            <a
+              href="https://mejorconsalud.as.com/cuidar-piel-seca-adultos-mayores/"
+            >
+              <div class="main__img">
                 <img src="img/photo 11.png" alt="" />
               </div>
-              <div class="main-news--text">
+              <div class="main__text">
                 <h4>Lorem ipsum dolor sit.</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
@@ -190,18 +240,23 @@
           </div>
         </div>
       </section>
-      <section id="recommended"class="recommended-news">
+      <section id="recommended">
         <div>
           <h3>También recomendamos</h3>
           <div class="separator"></div>
         </div>
-        <div class="main-news">
-          <div class="main-news--secundary">
-            <a href="">
-              <div class="main-news--secundary-img">
-                <img src="img/photo 12.png" alt="" />
+        <div class="main__news">
+          <div class="main__secundary">
+            <a
+              href="https://mejorconsalud.as.com/slugging-tendencia-cuidado-piel/"
+            >
+              <div class="main__img">
+                <img
+                  src="img/photo 12.png"
+                  alt="Pai e filho brincando com frutas"
+                />
               </div>
-              <div class="main-news--text">
+              <div class="main__text">
                 <h4>Lorem ipsum dolor sit.</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
@@ -209,11 +264,13 @@
                 </p>
               </div>
             </a>
-            <a href="">
-              <div class="main-news--secundary-img">
-                <img src="img/photo 13.png" alt="" />
+            <a
+              href="https://mejorconsalud.as.com/lugares-mas-menos-dolorosos-tatuaje/"
+            >
+              <div class="main__img">
+                <img src="img/photo 13.png" alt="Pai mãe e filho na natureza" />
               </div>
-              <div class="main-news--text">
+              <div class="main__text">
                 <h4>Lorem ipsum dolor sit.</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
@@ -221,11 +278,11 @@
                 </p>
               </div>
             </a>
-            <a href="">
-              <div class="main-news--secundary-img">
-                <img src="img/photo 14.png" alt="" />
+            <a href="https://mejorconsalud.as.com/cepillos-bambu-plasticos/">
+              <div class="main__img">
+                <img src="img/photo 14.png" alt="publicidade desktop 1" />
               </div>
-              <div class="main-news--text">
+              <div class="main__text">
                 <h4>Lorem ipsum dolor sit.</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
@@ -234,45 +291,45 @@
               </div>
             </a>
           </div>
-          <div class="publicity-recommended inactive">
-            <img src="img/publicity.png" alt="" />
+          <div class="publicity__recommended inactive">
+            <img src="img/publicity.png" alt="publicidade deskitop 2" />
           </div>
         </div>
       </section>
       <section>
-        <div class="publicity-recommended--mobile">
-          <img src="img/publicity mobile.png" alt="" />
+        <div class="publicity__mobile">
+          <img src="img/publicity mobile.png" alt="publicidade-mobilde" />
         </div>
       </section>
-      <section id="comments"class="comments-container">
+      <section id="comments" class="comments__container">
         <div>
           <h3>Testimonios</h3>
           <div class="separator"></div>
         </div>
 
         <div class="comments">
-          <img src="img/comments.png" alt="" />
-          <p class="comments-phrase">
+          <img src="img/comments.png" alt="marcador" />
+          <p class="comments__phrase">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
             lacinia ligula turpis, nec tincidunt ipsum sodales vitae. Ut
             accumsan sem et ante tincidunt, nec sodales odio volutpat. Integer
             aliquam tempus ligula, ac tempus libero
           </p>
-          <p class="comments-name">~ Lorem ipsum ~</p>
+          <p class="comments__name">~ Lorem ipsum ~</p>
           <ul>
             <li></li>
             <li></li>
             <li></li>
           </ul>
         </div>
-      </section >
+      </section>
       <div id="faq">
         <h3>FAQ</h3>
         <div class="separator"></div>
       </div>
-      <section class="faq-container">
+      <section class="faq__container">
         <div class="faq">
-          <dl class="faq-list">
+          <dl class="faq__list">
             <dt>
               <h6>
                 ¿Lorem ipsum dolor sit amet, consectetur adipiscing ?
@@ -289,7 +346,7 @@
                 <i class="fa-solid fa-angle-up"></i>
               </h6>
             </dt>
-            <dd class="faq-inactive">
+            <dd>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               lacinia ligula turpis.
             </dd>
@@ -299,35 +356,35 @@
                 <i class="fa-solid fa-angle-up"></i>
               </h6>
             </dt>
-            <dd class="faq-inactive">
+            <dd>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
               lacinia ligula turpis.
             </dd>
           </dl>
         </div>
-        <div class="faq-img inactive">
-          <img src="img/faq-img.png" alt="" />
+        <div class="faq__img inactive">
+          <img src="img/faq-img.png" alt=" faq imagem" />
         </div>
       </section>
-      <section id="contact"class="contacto-container">
+      <section id="contact" class="contacto__container">
         <div>
           <h3>Contacto</h3>
           <div class="separator"></div>
         </div>
         <div class="contact">
-          <div class="contact-img inactive">
-            <img src="img/img contact.png" alt="" />
+          <div class="contact__img inactive">
+            <img src="img/img contact.png" alt="imagem contato" />
           </div>
 
-          <form class="contact-form">
+          <form class="contact__form">
             <input
-              class="input-text"
+              class="input__text"
               type="text"
               placeholder=" Nombre"
               required
             />
             <input
-              class="input-text"
+              class="input__text"
               type="text"
               placeholder=" E-mail"
               required
@@ -339,19 +396,19 @@
               cols="30"
               rows="10"
             ></textarea>
-            <div class="input-checkbox">
+            <div class="input__checkbox">
               <input type="checkbox" />
               <p>Quiero recibir novedades por email</p>
             </div>
-            <button type="submit" class="contact-button">Enviar</button>
+            <button type="submit" class="form__button">Enviar</button>
           </form>
         </div>
       </section>
       <footer>
-        <div class="footer-container">
-          <div class="footer-logo">
+        <div class="footer__container">
+          <div class="footer__logo">
             <div>
-              <img src="img/mcontigo-log.png" alt="" />
+              <img src="img/mcontigo-log.png" alt="logo mcontigo" />
             </div>
 
             <p>
@@ -363,19 +420,38 @@
               confianza.
             </p>
           </div>
-          <div class="footer-separator inactive">
-            <img src="img/footer-separator.png" alt="" />
+          <div class="footer__separator inactive">
+            <img
+              src="img/footer-separator.png"
+              alt="imagem separador desktop"
+            />
           </div>
-          <div class="footer-separator-mobile">
-            <img src="img/separator-mobile.png" alt="" />
+          <div class="footer__separator--mobile">
+            <img
+              src="img/separator-mobile.png"
+              alt=" imagem separador mobile"
+            />
           </div>
 
-          <div class="footer-options">
+          <div class="footer__options">
             <ul>
-              <li><a href="">Política de Cookies</a></li>
-              <li><a href="">Política de Privacidad</a></li>
-              <li><a href="">Términos y condiciones de uso</a></li>
-              <li><a href="">Cláusula Informativa de Consentimiento</a></li>
+              <li>
+                <a href="https://mejorconsalud.as.com/politica-de-cookies/"
+                  >Política de Cookies</a
+                >
+              </li>
+              <li>
+                <a href="https://mejorconsalud.as.com/politica-de-privacidad/"
+                  >Política de Privacidad</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://mejorconsalud.as.com/consejos-maquillaje-alrededor-ojos/"
+                  >Términos y condiciones de uso</a
+                >
+              </li>
+              <li><a href="#">Cláusula Informativa de Consentimiento</a></li>
             </ul>
           </div>
         </div>
