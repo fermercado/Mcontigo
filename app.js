@@ -26,7 +26,6 @@ function menuFunctions() {
 
   menuOptions.forEach((option) => {
     option.addEventListener("click", (event) => {
-      event.preventDefault();
       closeMenu();
     });
   });
@@ -49,6 +48,7 @@ function initScrollSmooth() {
   const links = document.querySelectorAll('.menu__options a[href^="#"]');
 
   function scrollToSection(event) {
+    event.preventDefault();
     const href = event.currentTarget.getAttribute("href");
     const sections = document.querySelector(href);
     const top = sections.offsetTop;
