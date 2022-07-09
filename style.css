@@ -694,7 +694,7 @@ h6 i.faq-active {
   border: 1px solid #b5c4e2;
   border-radius: 5px;
   outline: none;
-  color: #65baa6;
+  color:#414141;
   font-size: 1rem;
   padding-left: 16px;
 }
@@ -708,7 +708,7 @@ h6 i.faq-active {
   border: 1px solid #b5c4e2;
   border-radius: 5px;
   outline: none;
-  color: #b378ff;
+  color: #414141;
   font-size: 1rem;
   padding: 16px;
 }
