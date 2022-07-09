@@ -926,6 +926,10 @@ a p:hover {
     width: 25px;
     height: 3px;
   }
+
+  .activeMenu.menu__button::after {
+    top: -9px;
+  }
   .home__text {
     margin-left: 5%;
     top: 8%;
