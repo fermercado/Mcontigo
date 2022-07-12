@@ -1,8 +1,7 @@
 Projeto responsivo desenvolvido com Figma/HTML/CSS/JavaScript
 
 - Figma: https://www.figma.com/file/C541LBZz5Fyo3hI7WA3tr8/mcontigo?node-id=0%3A1
-- GitHub: https://github.com/fermercado/Mcontigo 
-
+- Deploy: https://fermercado.github.io/Mcontigo/ 
 
 
 ![image](https://user-images.githubusercontent.com/88064355/178548504-49ef7fba-ce23-4495-b436-72d8edd8706d.png)
